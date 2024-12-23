@@ -1,0 +1,131 @@
+html {
+    height: 100%;
+}
+
+
+body {
+    background-color: #b1afaf;
+    background-image: url(swad-background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.box {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1024px;
+}
+
+header{
+    text-align: center;
+    height: 118px;
+    
+}
+
+nav {
+    background-color: black;
+    margin-top: 100px;
+    opacity: 70%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding-left: 50px;
+    padding-right: 50px;
+    
+}
+main {
+    color: #a9048d;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+nav a :hover {
+    cursor: pointer;
+}
+
+h1 {
+    color:#a9048d;
+    font-size: 175px;
+    padding-top: -30px;
+
+}
+
+.loctext {
+    text-align: center;
+    
+}
+
+.loctext h2 {
+    color:#a9048d;
+    font-size: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+iframe {
+    padding-bottom: 20px;
+}
+.infobox1 {
+    height: 200px;
+    
+    margin-bottom: 20px;
+    opacity: 60%;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+}
+.text-box {
+    
+    height: 200px;
+    background-color: black;
+    border: 2px solid #a9048d;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 18px;
+    color: #a9048d;
+    display: flex;
+    flex-wrap: nowrap;
+    
+}
+
+.small-box {
+    width: 300px;
+}
+
+.big-box {
+    width: 700px;
+}
+
+.bigtext {
+    font-size: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.bigtext p {
+    font-size: 20px;
+}
+
+.bigtext a {
+    color: #a9048d;
+}
+
+footer {
+    background-color: black;
+    opacity: 80%;
+    text-align: center;
+}
+
+footer p {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 100px;
+    font-size: 11px;
+}
