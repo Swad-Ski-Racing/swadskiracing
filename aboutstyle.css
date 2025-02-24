@@ -35,6 +35,18 @@ nav {
     opacity: 70%;
     padding: 15px 0;
     text-align: center;
+    background-color: black;
+    border: 2px solid #a9048d;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 18px;
+    color: #a9048d;
+    display: flex;
+   
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    
 }
 
 nav a {
@@ -57,23 +69,36 @@ section {
     background-color: black;
     opacity: 85%;
     text-align: center;
+    background-color: black;
+    border: 2px solid #a9048d;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 18px;
+    /* color: #a9048d; */
+    color: white;
+    align-items: center;
+    justify-content: center;
+  
+   
 } 
 
 
+span {
+    padding-top: 20px;
+    color: #a9048d;
+    display: inline-block;
+    font-size: 80px;
+    text-shadow: 3px 3px 5px rgb(115, 113, 113);
 
-h1 {
-    font-size: 8vw;
-    margin-top: 20px;
+}
+  .second-line {
+    display: block;
+    margin-top: 10px;
+    color: #a9048d;
+    font-size: 80px;
+    text-shadow: 3px 3px 5px rgb(115, 113, 113);
 }
 
-.loctext h2 {
-    font-size: 6vw;
-}
-
-iframe {
-    max-width: 100%;
-    height: auto;
-}
 
 .infobox1 {
     display: flex;
@@ -81,7 +106,9 @@ iframe {
     justify-content: center;
     gap: 20px;
     margin-bottom: 20px;
+    margin-top: 30px;
 }
+
 
 .text-box {
     background-color: black;
@@ -89,7 +116,6 @@ iframe {
     border-radius: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     font-size: 18px;
-    color: #a9048d;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -98,6 +124,14 @@ iframe {
     text-align: center;
     width: 100%;
     max-width: 400px;
+}
+
+.text-box h2 {
+    color: #a9048d;
+}
+
+.text-box p {
+    color: white;
 }
 
 .big-box {
@@ -134,7 +168,7 @@ footer {
         font-size: 10vw;
     }
 
-    .loctext h2 {
-        font-size: 7vw;
-    }
+
+
+  
 }
