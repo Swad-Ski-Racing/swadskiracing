@@ -1,155 +1,318 @@
-html {
-    height: 100%;
-    box-sizing: border-box;
-}
-
-*, *:before, *:after {
-    box-sizing: inherit;
-}
-
 body {
-    background-color: #b1afaf;
-    background-image: url(swad-background.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
     margin: 0;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.box {
-    max-width: 1200px;
-    width: 90%;
-    margin: auto;
-}
-
-header {
-    text-align: center;
-    height: auto;
+    font-family: 'Poppins', sans-serif;
+    color: #222;
+    background: #fff;
+    }
     
-}
-
-header img {
-    max-width: 100%;
-    height: auto;
-}
-
-nav {
-    background-color: black;
-    margin-top: 20px;
-    opacity: 70%;
-    padding: 15px 0;
-    text-align: center;
-    background-color: black;
-    border: 2px solid #a9048d;
-    border-radius: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    font-size: 18px;
-    color: #a9048d;
-    display: flex;
-   
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-}
-
-nav a {
-    color: white;
+    h1, h2 {
+    font-weight: 700;
+    }
+    
+    a {
     text-decoration: none;
-    padding: 10px 15px;
-    display: inline-block;
-}
-
-main {
-    color: #a9048d;
+    color: inherit;
+    }
+    
+    .hero {
+    background: url(swad-background.jpg) center/cover no-repeat;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    color: #b30495;
     text-align: center;
-}
+    position: relative;
+    }
+    .hero .overlay {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+      }
+      
+      .hero-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+        width: 100%;
+      }
+      
+      .hero-text {
+        flex: 1 1 auto;
+      }
+      
+      .hero-logo {
+        max-width: 500px;
+        max-height: 500px;
+        width: 100%;
+        height: auto;
+        flex-shrink: 0;
+      }
+      
+      /* Adjust logo size on smaller screens but keep it to the right */
+      @media (max-width: 768px) {
+        .hero-logo {
+          max-width: 150px;
+          max-height: 150px;
+        }
+      }
+      
+    .overlay {
+    width: 100%;
+    padding: 2rem;
+    background: rgba(0, 0, 0, 0.6);
+    }
+    
+    .hero h1 {
+    font-size: 3rem;
+    margin: 0;
+    color: white;
+    }
 
-h1 {
-    font-size: 9vw;
-    margin-top: 20px;
-    text-shadow: 3px 3px 5px rgb(115, 113, 113);
-   
-}
+    
+    .hero p {
+    margin: 1rem 0;
+    font-size: 1.2rem;
+    padding-bottom: 20px;
+    }
+    
+    .hero-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    }
+    
+    .btn {
+    padding: 0.75rem 1.5rem;
+    border-radius: 30px;
+    border: 2px solid white;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+    }
+    
+    .btn:hover {
+    background: white;
+    color: #b30495;
+    }
+    
+    .btn.red {
+    background: #b30495;
+    border-color: #b30495;
+    color: white;
+    }
+    .btn.red:hover {
+        background-color: #7d0369;
+    }
+    /* Add this CSS to your stylesheet */
 
-.loctext h2 {
-    font-size: 5vw;
-}
-
-iframe {
-    max-width: 100%;
-    height: 400px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-}
-
-.infobox1 {
+.btn {
+    display: inline-block; /* Default display for buttons */
+    margin: 10px; /* Adds spacing between buttons */
+  }
+  
+  @media (max-width: 768px) {
+    .btn {
+      display: block; /* Stacks the buttons vertically */
+      width: 100%; /* Makes each button take up the full width */
+    }
+  }
+  
+    .about {
+        padding: 20px;
+        text-align: center; /* Center the heading */
+      }
+      
+      .about-content {
+        display: flex;
+        justify-content: center; /* Centers content horizontally */
+        align-items: center; /* Centers content vertically */
+        gap: 40px; /* 40px gap between text and logo */
+        flex-wrap: wrap; /* Allows elements to stack on small screens */
+      }
+      
+      .about-text {
+        flex: 1 1 auto;
+        max-width: 600px;
+      }
+      
+      .about .logo {
+        width: 300px;
+        height: 300px;
+        object-fit: contain;
+      }
+      
+      /* Mobile responsive adjustments */
+      @media (max-width: 768px) {
+        .about-content {
+          flex-direction: column; /* Stacks text and logo on smaller screens */
+        }
+      
+        .about .logo {
+          width: 200px; /* Smaller logo size on mobile */
+          height: 200px;
+        }
+      }
+      /* Full page transition animation */
+@keyframes slideTransition {
+    0% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    100% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+  }
+  
+  /* Apply the animation to the body or main container */
+  body.sliding {
+    animation: slideTransition 0.5s ease forwards;
+  }
+  
+      /* Optional: Add button styles */
+      .find-out-more {
+        display: inline-block;
+        background-color: #b30495;
+        color: white;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 30px;
+        margin-top: 20px;
+      }
+      
+      .find-out-more:hover {
+        background-color: white;
+        border-color: #222;
+      }
+      
+    
+    .training {
+    text-align: center;
+    padding: 4rem 2rem;
+    }
+    
+    .training table {
+    margin: 2rem auto;
+    border-collapse: collapse;
+    width: 90%;
+    max-width: 600px;
+    font-size: 1.1rem;
+    }
+    
+    .training th, .training td {
+    padding: 1rem;
+    border: 1px solid #ccc;
+    }
+    
+    .training th {
+    background: #b30495;
+    color: white;
+    }
+    
+    .training tr:nth-child(2) td {
+    border-top: 2px solid white;
+    }
+    
+    .coaches-competitions {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    margin-bottom: 20px;
-}
-
-.text-box {
-    background-color: black;
-    border: 2px solid #a9048d;
-    border-radius: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    font-size: 18px;
+    justify-content: space-around;
+    padding: 4rem 2rem;
+    background: #f7f7f7;
+    }
+    
+    .coaches, .competitions {
+    flex: 1 1 300px;
+    margin: 1rem;
+    }
+    
+    .coach-list {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    gap: 1.5rem;
     justify-content: center;
-    padding: 20px;
+    margin-top: 1rem;
+    }
+    
+    .coach img {
+    width: 120px;
+    border-radius: 50%;
+    border: 3px solid #b30495;
+    }
+    
+    .coach h3 {
+    margin: 0.5rem 0 0.25rem;
+    }
+    
+    .competitions ul {
+    list-style: none;
+    padding: 0;
+    }
+    
+    .competitions li {
+    font-size: 1rem;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid #ccc;
+    }
+    
+    .date {
+    font-weight: bold;
+    color: #b30495;
+    display: inline-block;
+    width: 80px;
+    }
+    
+    /* Ensure the heading and paragraph are centered */
+h1 {
     text-align: center;
-    width: 100%;
-    max-width: 400px;
-}
-
-.text-box h2 {
-    color: #a9048d;
-}
-
-.text-box p {
-    color: white;
-}
-.big-box {
-    max-width: 600px;
-}
-
-footer {
-    background-color: black;
-    opacity: 80%;
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  
+  p {
     text-align: center;
-    padding: 20px;
-    margin-top: 50px;
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  
+  /* Centering the social links and creating spacing between the icons */
+  .social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;  /* Adds 30px gap between the icons */
+  }
+  
+  /* Styling the social logos */
+  .social-logo {
+    width: 50px;  /* Set the size of the logos */
+    height: 50px;
+    transition: transform 0.3s ease;  /* Smooth scaling on hover */
+    padding-bottom: 20px;
+  }
+  
+  .social-logo:hover {
+    transform: scale(1.2);  /* Slightly enlarge the icons on hover */
+  }
+  
+      
+    footer {
+    text-align: center;
+    padding: 2rem;
+    background: #7d0369;
     color: white;
-}
-
-@media (max-width: 768px) {
-    nav {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
     }
 
-    nav a {
-        padding: 10px;
-        font-size: 16px;
-    }
-
-    .infobox1 {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    h1 {
-        font-size: 10vw;
-    }
-
-    .loctext h2 {
-        font-size: 7vw;
-    }
-}
+    /* Initially hide the element */
+.pop-up {
+    opacity: 0;
+    transform: translateY(50px); /* Start from below */
+    transition: opacity 0.6s ease, transform 0.6s ease; /* Smooth transition */
+  }
+  
+  /* When the element is in view (applies the animation) */
+  .pop-up.visible {
+    opacity: 1;
+    transform: translateY(0); /* Moves up to its final position */
+  }

@@ -1,56 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Swad Ski Racing</title>
-    <meta name="description" content="Race Training Mondays & Thursdays 7pm-9pm · Represent Swad Ski Racing Club across the UK · Monthly Race Competition & Awards." />    
-    <link rel="stylesheet" href="style.css">
-
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Swad Ski Racing</title>
+<link rel="stylesheet" href="style.css" />
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
+<script src="script.js"></script>
 </head>
 <body>
-    <div class="box">
-
-        <header>
-            <img src="swadlogo.png" alt="swad ski racing logo">
-        </header>
-
-        <nav>
-            <a href="https://swadskiracing.vercel.app">| HOME |</a>
-            <a href="https://www.jnlswadlincote.co.uk/ski-snowboard-for-schools/#swad-ski-racing" target="_blank">| TRAINING |</a>
-            <a href="https://swadskiracing.vercel.app/about.html">| ABOUT US |</a>
-            <a href="https://safeguarding.swadskiracing.com/" target="_blank">| SAFE GUARDING |</a>
-           
-        </nav>
-
-        <main>
-            <h1>The Midlands Newest Ski Club</h1>
-
-            <div class="loctext">
-                <h2>Where Do We Train?</h2>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2413.901397954605!2d-1.5534910226800738!3d52.770052272127764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4879ff28d68551bd%3A0x944725f27a88587a!2sSwadlincote%20Snowsports%20Centre!5e0!3m2!1sen!2sfr!4v1734896817844!5m2!1sen!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-
-            <div class="infobox1">
-               
-                <div class="text-box small-box"><div class="smalltext"><h2>Traing Times</h2>
-                <p>Mondays 7pm - 9pm</p>
-                <p>Thursdays 7pm - 9pm</p>
-                </div></div>
-                 <div class="text-box big-box">
-                    <div class="bigtext">
-                        <h2>Contact Us</h2>
-                        <p>Email info@swadskiracing.com or click <a href="mailto:info@swadskiracing.com" subject="Training Inquiry">here</a></p>
-                    </div>
-                 </div>
-            </div>
-            <footer>
-                <p>Sir Herbert Wragg Way, DE11 8LP, Swad Ski Racing - Copyright 2024©</p>
-            </footer>
-
-        </main>
-
-
+  <header class="hero">
+    <div class="overlay">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1>BOLD.<br>FAST.<br>UNITED.</h1>
+          <p>Join Swad Ski Racing and carve your path to podium</p>
+          <a href="https://www.jnlswadlincote.co.uk/ski-snowboard-for-schools/#swad-ski-racing" class="btn red" target="_blank">Join us</a>
+            <a href="#training" class="btn">SEE TRAINING SCHEDULE</a>
+            <a href="https://safeguarding.swadskiracing.com/" class="btn red" target="_blank">Safe Guarding</a>
+          </div>
+        </div>
+        <img src="swadlogo.png" alt="Swad Ski Racing Logo" class="hero-logo"/>
+      </div>
     </div>
+  </header>
+  
+
+  <section class="about">
+    <h2>ABOUT US</h2>
+    <div class="about-content">
+      <div class="about-text">
+        <p>Swad Ski Racing is a premier ski racing club dedicated to nurturing talent and fostering a passion for alpine skiing. Our mission is to provide top-tier coaching and training programs that cater to athletes of all ages and skill levels, from beginners to seasoned competitors.</p>
+        <a href="http://127.0.0.1:5500/about.html" class="btn find-out-more" >Find Out More</a>
+      </div>
+      <img src="swadlogo.png" alt="Snowsport England" class="logo"/>
+    </div>
+  </section>
+  
+
+<section class="training" id="training">
+<h2>TRAINING</h2>
+<table>
+<tr>
+<th>DAYS</th>
+<th>TRAINING</th>
+</tr>
+<tr>
+<td>Monday</td>
+<td>7:00 PM – 8:00 PM</td>
+</tr>
+<tr>
+<td>Thursday</td>
+<td>7:00 PM – 9:00 PM</td>
+</tr>
+</table>
+<a href="#coaches" class="btn red">MEET OUR COACHES</a>
+</section>
+
+<section class="coaches-competitions" id="coaches">
+<div class="coaches">
+<h2>COACHES</h2>
+<div class="coach-list">
+<div class="coach">
+<img src="russ.png" alt="Russ Pike">
+<h3>Russ Pike</h3>
+<p>Head Coach<br>Multiple years of ski racing experience</p>
+</div>
+<div class="coach">
+<img src="#" alt="xxx">
+<h3>xxx</h3>
+<p>Assistant Coach<br>International Ski Team Member</p>
+</div>
+</div>
+</div>
+<div class="competitions">
+<h2>COMPETITIONS</h2>
+<ul>
+<li><span class="date">MAY 3</span>Club National - Pendle </li>
+<li><span class="date">MAY 4</span>Club National - Rossendale</li>
+<li><span class="date">MAY 17</span>GBR Copper Horse Series 1 – Llandudno</li>
+<li><span class="date">MAY 18</span>GBR Copper Horse Series 2 – Llandudno</li>
+<li><span class="date">JUNE 7</span>Mindland Club National + SSR Awards Night – Swadlincote</li>
+<li><span class="date">JUNE 8</span>CESA Club National – Swadlincote</li>
+<li><span class="date"></span>Speak To Andre or Email info@swadskiracing.com to sign up</li>
+</ul>
+</div>
+</section>
+
+<h1>Keep up to date with us</h1>
+
+<p>Follow us on Instagram and Facebook</p>
+
+<div class="social-links">
+  <a href="https://www.instagram.com/swadskiracing?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" class="social-logo"/>
+  </a>
+  
+  <a href="https://www.facebook.com/swad.ski.racing/" target="_blank">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" class="social-logo"/>
+  </a>
+</div>
+
+
+<footer>
+
+<p><strong>Phone:</strong> <a href="tel:+447860816419">07860 816419</a></p>
+    <p><strong>Email:</strong> <a href="mailto:info@swadskiracing.com">info@swadskiracing.com</a></p>
+    <p>&copy; 2025 Swad Ski Racing. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
