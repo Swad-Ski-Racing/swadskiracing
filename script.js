@@ -39,4 +39,10 @@ function checkVisibility() {
       window.location.href = pageUrl;
     }, 500); // Match this time with your animation duration
   }
-    
+  document.querySelector('a[href="#join"]').addEventListener('click', function(e) {
+    e.preventDefault();
+    const target = document.querySelector('#join');
+    if (target) {
+      target.scrollIntoView({ behavior: 'smooth' });
+    }
+  });    
