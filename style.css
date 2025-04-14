@@ -3,18 +3,18 @@ body {
     font-family: 'Poppins', sans-serif;
     color: #222;
     background: #fff;
-    }
-    
-    h1, h2 {
+}
+
+h1, h2 {
     font-weight: 700;
-    }
-    
-    a {
+}
+
+a {
     text-decoration: none;
     color: inherit;
-    }
-    
-    .hero {
+}
+
+.hero {
     background: url(swad-background.jpg) center/cover no-repeat;
     height: 100vh;
     display: flex;
@@ -22,297 +22,296 @@ body {
     color: #b30495;
     text-align: center;
     position: relative;
+}
+
+.hero .overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.hero-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    flex-direction: row; /* Desktop: logo on right */
+}
+
+.hero-text {
+    flex: 1 1 auto;
+}
+
+.hero-logo {
+    max-width: 500px;
+    max-height: 500px;
+    width: 100%;
+    height: auto;
+    flex-shrink: 0;
+}
+
+/* Mobile: Stack logo above text */
+@media (max-width: 768px) {
+    .hero-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
-    .hero .overlay {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 20px;
-      }
-      
-      .hero-content {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        gap: 20px;
-        width: 100%;
-      }
-      
-      .hero-text {
-        flex: 1 1 auto;
-      }
-      
-      .hero-logo {
-        max-width: 500px;
-        max-height: 500px;
-        width: 100%;
-        height: auto;
-        flex-shrink: 0;
-      }
-      
-      /* Adjust logo size on smaller screens but keep it to the right */
-      @media (max-width: 768px) {
-        .hero-logo {
-          max-width: 150px;
-          max-height: 150px;
-        }
-      }
-      
-    .overlay {
+
+    .hero-logo {
+        max-width: 150px;
+        max-height: 150px;
+        margin-bottom: 20px;
+    }
+}
+
+.overlay {
     width: 100%;
     padding: 2rem;
     background: rgba(0, 0, 0, 0.6);
-    }
-    
-    .hero h1 {
+}
+
+.hero h1 {
     font-size: 3rem;
     margin: 0;
     color: white;
-    }
+}
 
-    
-    .hero p {
+.hero p {
     margin: 1rem 0;
     font-size: 1.2rem;
     padding-bottom: 20px;
-    }
-    
-    .hero-buttons {
+}
+
+.hero-buttons {
     display: flex;
     gap: 1rem;
     justify-content: center;
-    }
-    
-    .btn {
+}
+
+.btn {
     padding: 0.75rem 1.5rem;
     border-radius: 30px;
     border: 2px solid white;
     color: white;
     font-weight: bold;
     transition: 0.3s;
-    }
-    
-    .btn:hover {
+    display: inline-block;
+    margin: 10px;
+}
+
+.btn:hover {
     background: white;
     color: #b30495;
-    }
-    
-    .btn.red {
+}
+
+.btn.red {
     background: #b30495;
     border-color: #b30495;
     color: white;
-    }
-    .btn.red:hover {
-        background-color: #7d0369;
-    }
-    /* Add this CSS to your stylesheet */
+}
 
-.btn {
-    display: inline-block; /* Default display for buttons */
-    margin: 10px; /* Adds spacing between buttons */
-  }
-  
-  @media (max-width: 768px) {
+.btn.red:hover {
+    background-color: #7d0369;
+}
+
+/* Mobile: Buttons full-width but limited max size */
+@media (max-width: 768px) {
     .btn {
-      display: block; /* Stacks the buttons vertically */
-      width: 100%; /* Makes each button take up the full width */
+        display: block;
+        width: 100%;
+        max-width: 300px;
+        margin: 10px auto;
+        text-align: center;
     }
-  }
-  
-    .about {
-        padding: 20px;
-        text-align: center; /* Center the heading */
-      }
-      
-      .about-content {
-        display: flex;
-        justify-content: center; /* Centers content horizontally */
-        align-items: center; /* Centers content vertically */
-        gap: 40px; /* 40px gap between text and logo */
-        flex-wrap: wrap; /* Allows elements to stack on small screens */
-      }
-      
-      .about-text {
-        flex: 1 1 auto;
-        max-width: 600px;
-      }
-      
-      .about .logo {
-        width: 300px;
-        height: 300px;
-        object-fit: contain;
-      }
-      
-      /* Mobile responsive adjustments */
-      @media (max-width: 768px) {
-        .about-content {
-          flex-direction: column; /* Stacks text and logo on smaller screens */
-        }
-      
-        .about .logo {
-          width: 200px; /* Smaller logo size on mobile */
-          height: 200px;
-        }
-      }
-      /* Full page transition animation */
+}
+
+.about {
+    padding: 20px;
+    text-align: center;
+}
+
+.about-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.about-text {
+    flex: 1 1 auto;
+    max-width: 600px;
+}
+
+.about .logo {
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+}
+
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+    }
+
+    .about .logo {
+        width: 200px;
+        height: 200px;
+    }
+}
+
 @keyframes slideTransition {
     0% {
-      transform: translateX(0);
-      opacity: 1;
+        transform: translateX(0);
+        opacity: 1;
     }
     100% {
-      transform: translateX(-100%);
-      opacity: 0;
+        transform: translateX(-100%);
+        opacity: 0;
     }
-  }
-  
-  /* Apply the animation to the body or main container */
-  body.sliding {
+}
+
+body.sliding {
     animation: slideTransition 0.5s ease forwards;
-  }
-  
-      /* Optional: Add button styles */
-      .find-out-more {
-        display: inline-block;
-        background-color: #b30495;
-        color: white;
-        padding: 10px 20px;
-        text-decoration: none;
-        border-radius: 30px;
-        margin-top: 20px;
-      }
-      
-      .find-out-more:hover {
-        background-color: white;
-        border-color: #222;
-      }
-      
-    
-    .training {
+}
+
+.find-out-more {
+    display: inline-block;
+    background-color: #b30495;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 30px;
+    margin-top: 20px;
+}
+
+.find-out-more:hover {
+    background-color: white;
+    border-color: #222;
+}
+
+.training {
     text-align: center;
     padding: 4rem 2rem;
-    }
-    
-    .training table {
+}
+
+.training table {
     margin: 2rem auto;
     border-collapse: collapse;
     width: 90%;
     max-width: 600px;
     font-size: 1.1rem;
-    }
-    
-    .training th, .training td {
+}
+
+.training th, .training td {
     padding: 1rem;
     border: 1px solid #ccc;
-    }
-    
-    .training th {
+}
+
+.training th {
     background: #b30495;
     color: white;
-    }
-    
-    .training tr:nth-child(2) td {
+}
+
+.training tr:nth-child(2) td {
     border-top: 2px solid white;
-    }
-    
-    .coaches-competitions {
+}
+
+.coaches-competitions {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     padding: 4rem 2rem;
     background: #f7f7f7;
-    }
-    
-    .coaches, .competitions {
+}
+
+.coaches, .competitions {
     flex: 1 1 300px;
     margin: 1rem;
-    }
-    
-    .coach-list {
+}
+
+.coach-list {
     display: flex;
     gap: 1.5rem;
     justify-content: center;
     margin-top: 1rem;
-    }
-    
-    .coach img {
+}
+
+.coach img {
     width: 120px;
     border-radius: 50%;
     border: 3px solid #b30495;
-    }
-    
-    .coach h3 {
+}
+
+.coach h3 {
     margin: 0.5rem 0 0.25rem;
-    }
-    
-    .competitions ul {
+}
+
+.competitions ul {
     list-style: none;
     padding: 0;
-    }
-    
-    .competitions li {
+}
+
+.competitions li {
     font-size: 1rem;
     padding: 0.75rem 0;
     border-bottom: 1px solid #ccc;
-    }
-    
-    .date {
+}
+
+.date {
     font-weight: bold;
     color: #b30495;
     display: inline-block;
     width: 80px;
-    }
-    
-    /* Ensure the heading and paragraph are centered */
+}
+
 h1 {
     text-align: center;
     font-size: 28px;
     margin-bottom: 10px;
-  }
-  
-  p {
+}
+
+p {
     text-align: center;
     font-size: 18px;
     margin-bottom: 30px;
-  }
-  
-  /* Centering the social links and creating spacing between the icons */
-  .social-links {
+}
+
+.social-links {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 30px;  /* Adds 30px gap between the icons */
-  }
-  
-  /* Styling the social logos */
-  .social-logo {
-    width: 50px;  /* Set the size of the logos */
+    gap: 30px;
+}
+
+.social-logo {
+    width: 50px;
     height: 50px;
-    transition: transform 0.3s ease;  /* Smooth scaling on hover */
+    transition: transform 0.3s ease;
     padding-bottom: 20px;
-  }
-  
-  .social-logo:hover {
-    transform: scale(1.2);  /* Slightly enlarge the icons on hover */
-  }
-  
-      
-    footer {
+}
+
+.social-logo:hover {
+    transform: scale(1.2);
+}
+
+footer {
     text-align: center;
     padding: 2rem;
     background: #7d0369;
     color: white;
-    }
+}
 
-    /* Initially hide the element */
 .pop-up {
     opacity: 0;
-    transform: translateY(50px); /* Start from below */
-    transition: opacity 0.6s ease, transform 0.6s ease; /* Smooth transition */
-  }
-  
-  /* When the element is in view (applies the animation) */
-  .pop-up.visible {
+    transform: translateY(50px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.pop-up.visible {
     opacity: 1;
-    transform: translateY(0); /* Moves up to its final position */
-  }
+    transform: translateY(0);
+}
