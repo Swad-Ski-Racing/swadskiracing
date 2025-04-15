@@ -91,6 +91,45 @@ a {
     justify-content: center;
 }
 
+.about-hero {
+    height: auto;
+    min-height: 50vh;
+}
+
+.about-hero .overlay {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 2rem;
+}
+
+.about-hero-content {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-hero-logo {
+    max-width: 300px;
+    max-height: 300px;
+}
+
+/* Mobile adjustment stays similar */
+@media (max-width: 768px) {
+    .about-hero-content {
+        flex-direction: column;
+    }
+
+    .about-hero-logo {
+        max-width: 150px;
+        max-height: 150px;
+        margin-bottom: 20px;
+    }
+}
+.about-hero {
+    height: 500px;
+    max-height: 500px;
+}
+
+
 .btn {
     padding: 0.75rem 1.5rem;
     border-radius: 30px;
