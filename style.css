@@ -15,7 +15,7 @@ a {
 }
 
 .hero {
-    background: url(swad-background.jpg) center/cover no-repeat;
+    background: url(background2.jpeg) center/cover no-repeat;
     height: 100vh;
     display: flex;
     align-items: center;
